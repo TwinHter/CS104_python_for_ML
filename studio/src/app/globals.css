@@ -1,0 +1,123 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 180 40% 90%; /* Light grayish teal #E0EEEE */
+    --foreground: 180 30% 25%; /* Darker teal-gray for text */
+
+    --card: 0 0% 100%; /* White - for Navbar BG, Card BGs */
+    --card-foreground: 180 30% 25%; /* Darker teal-gray */
+
+    --popover: 0 0% 100%; /* White */
+    --popover-foreground: 180 30% 25%; /* Darker teal-gray */
+
+    --primary: 180 100% 25%; /* Saturated Teal #008080 - for titles, important elements */
+    --primary-foreground: 0 0% 100%; /* White - for text on primary elements */
+
+    --secondary: 180 70% 40%; /* A medium teal for secondary buttons/elements */
+    --secondary-foreground: 0 0% 100%; /* White */
+    
+    /* Muted for hero/feature section backgrounds */
+    --muted: 180 35% 92%; /* A slightly different light grayish teal for section backgrounds */
+    --muted-foreground: 180 25% 35%; /* Text on muted background */
+
+    --accent: 197 71% 73%; /* Sky Blue #87CEEB - for active nav item background & other accents */
+    --accent-foreground: 0 0% 20%; /* Dark Gray for text on sky blue for better contrast */
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 180 30% 75%; /* Teal-ish border */
+    --input: 180 60% 97%; /* Very pale teal input BG */
+    --ring: 180 100% 30%; /* Teal ring for focus states */
+
+    --radius: 0.5rem;
+
+    /* Chart colors */
+    --chart-1: 180 100% 25%;  /* Saturated Teal (Primary) */
+    --chart-2: 197 71% 73%;   /* Sky Blue (Accent) */
+    --chart-3: 25 80% 60%;    /* Orange/Coral */
+    --chart-4: 130 60% 45%;   /* Green */
+    --chart-5: 280 70% 65%;   /* Purple */
+
+    /* Sidebar specific colors - align with the new theme */
+    --sidebar-background: 180 40% 93%; /* Slightly lighter than main bg or similar */
+    --sidebar-foreground: 180 30% 25%;
+    --sidebar-primary: 180 100% 25%; /* Teal */
+    --sidebar-primary-foreground: 0 0% 100%; /* White */
+    --sidebar-accent: 197 71% 73%; /* Sky Blue */
+    --sidebar-accent-foreground: 0 0% 20%; /* Dark Gray for text on sky blue */
+    --sidebar-border: 180 30% 70%;
+    --sidebar-ring: 180 100% 30%;
+  }
+
+  .dark {
+    /* Dark mode - Thematic counterparts to the light theme */
+    --background: 180 15% 10%; /* Very dark teal-gray */
+    --foreground: 180 20% 85%; /* Light teal-gray text */
+
+    --card: 180 18% 15%; /* Darker card background */
+    --card-foreground: 180 20% 85%;
+
+    --popover: 180 18% 15%;
+    --popover-foreground: 180 20% 85%;
+
+    --primary: 180 80% 45%; /* Brighter Teal for dark mode */
+    --primary-foreground: 180 100% 10%; /* Very dark for text on brighter teal */
+
+    --secondary: 180 60% 35%; /* Medium-dark teal */
+    --secondary-foreground: 180 20% 85%;
+    
+    --muted: 180 15% 20%; /* Dark muted section background */
+    --muted-foreground: 180 20% 65%;
+
+    --accent: 197 60% 60%; /* Dark mode Sky Blue */
+    --accent-foreground: 197 100% 90%; /* Light text for dark sky blue */
+
+    --destructive: 0 70% 50%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 180 20% 30%;
+    --input: 180 20% 22%;
+    --ring: 180 80% 50%;
+
+    /* Chart colors for dark mode */
+    --chart-1: 180 80% 45%;  /* Brighter Teal */
+    --chart-2: 197 60% 60%;   /* Dark Sky Blue */
+    --chart-3: 25 70% 55%;    /* Muted Orange/Coral */
+    --chart-4: 130 50% 40%;   /* Muted Green */
+    --chart-5: 280 60% 60%;   /* Muted Purple */
+    
+    /* Sidebar specific colors - dark theme */
+    --sidebar-background: 180 15% 12%;
+    --sidebar-foreground: 180 20% 85%;
+    --sidebar-primary: 180 80% 45%;
+    --sidebar-primary-foreground: 180 100% 10%;
+    --sidebar-accent: 197 60% 60%;
+    --sidebar-accent-foreground: 197 100% 90%;
+    --sidebar-border: 180 20% 25%;
+    --sidebar-ring: 180 80% 50%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 0.6s ease-out forwards;
+}
+

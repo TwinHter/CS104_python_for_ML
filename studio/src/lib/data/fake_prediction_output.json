@@ -1,0 +1,20 @@
+
+{
+  "price": 575000,
+  "isStable": true,
+  "priceHistoryChartData": [
+    { "month": "Jan 2025", "price": 570000 },
+    { "month": "Feb 2025", "price": 572000 },
+    { "month": "Mar 2025", "price": 571000 },
+    { "month": "Apr 2025", "price": 573000 },
+    { "month": "May 2025", "price": 575000 },
+    { "month": "Jun 2025", "price": 576000 },
+    { "month": "Jul 2025", "price": 574000 },
+    { "month": "Aug 2025", "price": 575000 },
+    { "month": "Sep 2025", "price": 577000 },
+    { "month": "Oct 2025", "price": 578000 },
+    { "month": "Nov 2025", "price": 579000 },
+    { "month": "Dec 2025", "price": 580000 }
+  ]
+}
+
