@@ -1,0 +1,52 @@
+# ==== Global ignores ====
+*.env
+*.env.local
+*.log
+.DS_Store
+node_modules/
+__pycache__/
+*.pyc
+
+# ==== Python/FastAPI backend ====
+backend/__pycache__/
+backend/*.pyc
+backend/*.pyo
+backend/*.pyd
+backend/.venv/
+backend/venv/
+backend/env/
+backend/.mypy_cache/
+backend/.pytest_cache/
+backend/.coverage
+backend/coverage.xml
+backend/htmlcov/
+backend/.ruff_cache/
+backend/.vscode/
+
+# Nếu dùng poetry:
+backend/poetry.lock
+backend/.python-version
+
+# Nếu dùng pip + requirements.txt, thường không ignore
+# backend/requirements.txt (KHÔNG ignore nếu cần chia sẻ dependency)
+
+# ==== Node.js / Next.js / React (studio) frontend ====
+studio/node_modules/
+studio/.next/
+studio/.env.local
+studio/.env.development.local
+studio/.env.test.local
+studio/.env.production.local
+studio/coverage/
+studio/.turbo/
+studio/.vercel/
+studio/dist/
+studio/build/
+studio/.vscode/
+
+# npm/yarn lock files — nên giữ nếu dùng 1 package manager cố định
+# Nếu dùng yarn:
+# !studio/yarn.lock
+# Nếu dùng npm:
+# !studio/package-lock.json
+
